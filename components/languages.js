@@ -1,4 +1,4 @@
-const Translations = {
+{
   en: {
     expenseCalculator: "Group Expense Calculator",
     whoPaidHowMuch: "Who paid what?",
@@ -319,4 +319,3 @@ const Translations = {
   },
 };
 
-export default Translations;

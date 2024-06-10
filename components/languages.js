@@ -125,7 +125,7 @@ const Translations = {
   },
   he: {
     expenseCalculator: "מחשבון ההוצאות של החבר'ה",
-    whoPaidHowMuch: "מי שילם וכמה?",
+    whoPaidHowMuch: "מיייייי שילם וכמה?",
     eachMemberPaid: "כמה כל אחד מהחברים שילם",
     name: "שם",
     amount: "סכום חבר",

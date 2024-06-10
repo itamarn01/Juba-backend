@@ -130,7 +130,7 @@
     "previous": "הקודם",
     "calculate": "חשב",
     "membersPaid": "החברים ששילמו",
-    "totalPaid": 'סה"כ שולם:',
+    "totalPaid": "סה\"כ שולם:",
     "pricePerPerson": "מחיר לאדם:",
     "member1OwesMember2": "%{friend1} צריך להחזיר כסף ל%{friend2}: %{amount} %{currency}",
     "share": "שתף",

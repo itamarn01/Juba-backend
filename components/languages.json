@@ -137,7 +137,8 @@
         "close": "סגור",
         "friend": "חבר",
         "notPaidFriends": "החברים שלא שילמו",
-        "updateNotPaidFriends": "עדכן שמות החברים שלא שילמו"
+        "updateNotPaidFriends": "עדכן מי לא שילם",
+        "save": "שמור"
       },
       "ar": {
         "expenseCalculator": "حاسبة مصاريف المجموعة",

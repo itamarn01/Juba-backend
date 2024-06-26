@@ -20,7 +20,10 @@
       "member1OwesMember2": "%{friend1} owes money to %{friend2}: %{currency}%{amount}",
       "share": "Share",
       "close": "Close",
-      "friend": "Person"
+      "friend": "Person",
+"notPaidFriends": "People who didn't pay",
+"updateNotPaidFriends": "Update who didn't pay",
+"save": "Save"
     },
     "es": {
       "expenseCalculator": "Calculadora de gastos grupales",
@@ -43,7 +46,10 @@
       "member1OwesMember2": "%{friend1} debe dinero a %{friend2}: %{currency}%{amount}",
       "share": "Compartir",
       "close": "Cerrar",
-      "friend": "Persona"
+      "friend": "Persona",
+"notPaidFriends": "Personas que no pagaron",
+"updateNotPaidFriends": "Actualizar quién no pagó",
+"save": "Guardar"
     },
     "fr": {
       "expenseCalculator": "Calculateur de dépenses de groupe",
@@ -89,7 +95,10 @@
       "member1OwesMember2": "%{friend1} deve soldi a %{friend2}: %{currency}%{amount}",
       "share": "Condividi",
       "close": "Chiudi",
-      "friend": "Persona"
+      "friend": "Persona",
+"notPaidFriends": "Persone che non hanno pagato",
+"updateNotPaidFriends": "Aggiorna chi non ha pagato",
+"save": "Salva"
     },
     "de": {
       "expenseCalculator": "Gruppen-Ausgabenrechner",
@@ -112,7 +121,10 @@
       "member1OwesMember2": "%{friend1} schuldet %{friend2}: %{currency}%{amount}",
       "share": "Teilen",
       "close": "Schließen",
-      "friend": "Person"
+      "friend": "Person",
+"notPaidFriends": "Personen, die nicht bezahlt haben",
+"updateNotPaidFriends": "Aktualisieren, wer nicht bezahlt hat",
+"save": "Speichern"
     },
     "he": {
         "expenseCalculator": "מחשבון ההוצאות של החבר'ה",
@@ -161,7 +173,10 @@
         "member1OwesMember2": "%{friend1} مدين بـ %{currency}%{amount} إلى %{friend2}",
         "share": "مشاركة",
         "close": "إغلاق",
-        "friend": "شخص"
+        "friend": "شخص",
+"notPaidFriends": "الأشخاص الذين لم يدفعوا",
+"updateNotPaidFriends": "تحديث من لم يدفع",
+"save": "حفظ"
       },
       "zh": {
         "expenseCalculator": "团体费用计算器",
@@ -184,7 +199,10 @@
         "member1OwesMember2": "%{friend1} 欠 %{friend2} %{currency}%{amount}",
         "share": "分享",
         "close": "关闭",
-        "friend": "成员"
+        "friend": "成员",
+"notPaidFriends": "未付款的人",
+"updateNotPaidFriends": "更新谁未付款",
+"save": "保存"
       },
       "ja": {
         "expenseCalculator": "グループ費用計算機",
@@ -207,7 +225,10 @@
         "member1OwesMember2": "%{friend1} は %{friend2} に %{currency}%{amount} を借りています",
         "share": "共有",
         "close": "閉じる",
-        "friend": "メンバー"
+        "friend": "メンバー",
+"notPaidFriends": "支払っていない人",
+"updateNotPaidFriends": "支払っていない人を更新",
+"save": "保存"
       },
       "ko": {
         "expenseCalculator": "그룹 비용 계산기",
@@ -230,7 +251,10 @@
         "member1OwesMember2": "%{friend1} 은 %{friend2} 에게 %{currency}%{amount} 을 빚졌습니다",
         "share": "공유",
         "close": "닫기",
-        "friend": "멤버"
+        "friend": "멤버",
+"notPaidFriends": "지불하지 않은 사람들",
+"updateNotPaidFriends": "지불하지 않은 사람 업데이트",
+"save": "저장"
       },
       "pt": {
         "expenseCalculator": "Calculadora de Despesas do Grupo",
@@ -253,7 +277,10 @@
         "member1OwesMember2": "%{friend1} deve dinheiro a %{friend2}: %{currency}%{amount}",
         "share": "Compartilhar",
         "close": "Fechar",
-        "friend": "Membro"
+        "friend": "Membro",
+"notPaidFriends": "Pessoas que não pagaram",
+"updateNotPaidFriends": "Atualizar quem não pagou",
+"save": "Salvar"
       },
       "ru": {
         "expenseCalculator": "Калькулятор расходов группы",
@@ -276,7 +303,9 @@
         "member1OwesMember2": "%{friend1} должен %{friend2}: %{currency}%{amount}",
         "share": "Поделиться",
         "close": "Закрыть",
-        "friend": "Участник"
+        "friend": "Участник","notPaidFriends": "Люди, которые не заплатили",
+"updateNotPaidFriends": "Обновить, кто не заплатил",
+"save": "Сохранить"
       },
       "hi": {
         "expenseCalculator": "समूह व्यय कैलकुलेटर",
@@ -299,7 +328,10 @@
         "member1OwesMember2": "%{friend1} को %{friend2} को %{currency}%{amount} देना है",
         "share": "साझा करें",
         "close": "बंद करें",
-        "friend": "सदस्य"
+        "friend": "सदस्य",
+          "notPaidFriends": "जिन लोगों ने भुगतान नहीं किया",
+"updateNotPaidFriends": "अपडेट करें किसने भुगतान नहीं किया",
+"save": "सहेजें"
       },
       "tr": {
         "expenseCalculator": "Grup Gider Hesaplayıcı",
@@ -322,6 +354,9 @@
         "member1OwesMember2": "%{friend1}, %{friend2}'ye %{currency}%{amount} borçlu",
         "share": "Paylaş",
         "close": "Kapat",
-        "friend": "Üye"
+        "friend": "Üye",
+"notPaidFriends": "Ödeme yapmayan kişiler",
+"updateNotPaidFriends": "Ödeme yapmayanları güncelle",
+"save": "Kaydet"
       }
     }

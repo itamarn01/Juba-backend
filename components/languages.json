@@ -136,7 +136,8 @@
         "share": "שתף",
         "close": "סגור",
         "friend": "חבר",
-        "notPaidFriends": "החברים שלא שילמו"
+        "notPaidFriends": "החברים שלא שילמו",
+        "updateNotPaidFriends": "עדכן שמות החברים שלא שילמו"
       },
       "ar": {
         "expenseCalculator": "حاسبة مصاريف المجموعة",

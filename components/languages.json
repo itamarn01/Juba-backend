@@ -21,9 +21,9 @@
       "share": "Share",
       "close": "Close",
       "friend": "Person",
-"notPaidFriends": "People who didn't pay",
-"updateNotPaidFriends": "Update who didn't pay",
-"save": "Save"
+      "notPaidFriends": "People who didn't pay",
+      "updateNotPaidFriends": "Update who didn't pay",
+      "save": "Save"
     },
     "es": {
       "expenseCalculator": "Calculadora de gastos grupales",
@@ -47,9 +47,9 @@
       "share": "Compartir",
       "close": "Cerrar",
       "friend": "Persona",
-"notPaidFriends": "Personas que no pagaron",
-"updateNotPaidFriends": "Actualizar quién no pagó",
-"save": "Guardar"
+      "notPaidFriends": "Personas que no pagaron",
+      "updateNotPaidFriends": "Actualizar quién no pagó",
+      "save": "Guardar"
     },
     "fr": {
       "expenseCalculator": "Calculateur de dépenses de groupe",
@@ -72,7 +72,10 @@
       "member1OwesMember2": "%{friend1} doit de l'argent à %{friend2}: %{currency}%{amount}",
       "share": "Partager",
       "close": "Fermer",
-      "friend": "Personne"
+      "friend": "Personne",
+      "notPaidFriends": "Personnes n'ayant pas payé",
+      "updateNotPaidFriends": "Mettre à jour qui n'a pas payé",
+      "save": "Enregistrer"
     },
     "it": {
       "expenseCalculator": "Calcolatore di spese di gruppo",
@@ -96,9 +99,9 @@
       "share": "Condividi",
       "close": "Chiudi",
       "friend": "Persona",
-"notPaidFriends": "Persone che non hanno pagato",
-"updateNotPaidFriends": "Aggiorna chi non ha pagato",
-"save": "Salva"
+      "notPaidFriends": "Persone che non hanno pagato",
+      "updateNotPaidFriends": "Aggiorna chi non ha pagato",
+      "save": "Salva"
     },
     "de": {
       "expenseCalculator": "Gruppen-Ausgabenrechner",
@@ -122,9 +125,9 @@
       "share": "Teilen",
       "close": "Schließen",
       "friend": "Person",
-"notPaidFriends": "Personen, die nicht bezahlt haben",
-"updateNotPaidFriends": "Aktualisieren, wer nicht bezahlt hat",
-"save": "Speichern"
+      "notPaidFriends": "Personen, die nicht bezahlt haben",
+      "updateNotPaidFriends": "Aktualisieren, wer nicht bezahlt hat",
+      "save": "Speichern"
     },
     "he": {
         "expenseCalculator": "מחשבון ההוצאות של החבר'ה",
@@ -174,9 +177,9 @@
         "share": "مشاركة",
         "close": "إغلاق",
         "friend": "شخص",
-"notPaidFriends": "الأشخاص الذين لم يدفعوا",
-"updateNotPaidFriends": "تحديث من لم يدفع",
-"save": "حفظ"
+        "notPaidFriends": "الأشخاص الذين لم يدفعوا",
+        "updateNotPaidFriends": "تحديث من لم يدفع",
+        "save": "حفظ"
       },
       "zh": {
         "expenseCalculator": "团体费用计算器",
@@ -200,9 +203,9 @@
         "share": "分享",
         "close": "关闭",
         "friend": "成员",
-"notPaidFriends": "未付款的人",
-"updateNotPaidFriends": "更新谁未付款",
-"save": "保存"
+        "notPaidFriends": "未付款的人",
+        "updateNotPaidFriends": "更新谁未付款",
+        "save": "保存"
       },
       "ja": {
         "expenseCalculator": "グループ費用計算機",
@@ -226,9 +229,9 @@
         "share": "共有",
         "close": "閉じる",
         "friend": "メンバー",
-"notPaidFriends": "支払っていない人",
-"updateNotPaidFriends": "支払っていない人を更新",
-"save": "保存"
+        "notPaidFriends": "支払っていない人",
+        "updateNotPaidFriends": "支払っていない人を更新",
+        "save": "保存"
       },
       "ko": {
         "expenseCalculator": "그룹 비용 계산기",
@@ -252,9 +255,9 @@
         "share": "공유",
         "close": "닫기",
         "friend": "멤버",
-"notPaidFriends": "지불하지 않은 사람들",
-"updateNotPaidFriends": "지불하지 않은 사람 업데이트",
-"save": "저장"
+        "notPaidFriends": "지불하지 않은 사람들",
+        "updateNotPaidFriends": "지불하지 않은 사람 업데이트",
+        "save": "저장"
       },
       "pt": {
         "expenseCalculator": "Calculadora de Despesas do Grupo",
@@ -278,9 +281,9 @@
         "share": "Compartilhar",
         "close": "Fechar",
         "friend": "Membro",
-"notPaidFriends": "Pessoas que não pagaram",
-"updateNotPaidFriends": "Atualizar quem não pagou",
-"save": "Salvar"
+        "notPaidFriends": "Pessoas que não pagaram",
+        "updateNotPaidFriends": "Atualizar quem não pagou",
+        "save": "Salvar"
       },
       "ru": {
         "expenseCalculator": "Калькулятор расходов группы",
@@ -304,8 +307,8 @@
         "share": "Поделиться",
         "close": "Закрыть",
         "friend": "Участник","notPaidFriends": "Люди, которые не заплатили",
-"updateNotPaidFriends": "Обновить, кто не заплатил",
-"save": "Сохранить"
+        "updateNotPaidFriends": "Обновить, кто не заплатил",
+        "save": "Сохранить"
       },
       "hi": {
         "expenseCalculator": "समूह व्यय कैलकुलेटर",
@@ -329,9 +332,9 @@
         "share": "साझा करें",
         "close": "बंद करें",
         "friend": "सदस्य",
-          "notPaidFriends": "जिन लोगों ने भुगतान नहीं किया",
-"updateNotPaidFriends": "अपडेट करें किसने भुगतान नहीं किया",
-"save": "सहेजें"
+        "notPaidFriends": "जिन लोगों ने भुगतान नहीं किया",
+        "updateNotPaidFriends": "अपडेट करें किसने भुगतान नहीं किया",
+        "save": "सहेजें"
       },
       "tr": {
         "expenseCalculator": "Grup Gider Hesaplayıcı",
@@ -355,8 +358,8 @@
         "share": "Paylaş",
         "close": "Kapat",
         "friend": "Üye",
-"notPaidFriends": "Ödeme yapmayan kişiler",
-"updateNotPaidFriends": "Ödeme yapmayanları güncelle",
-"save": "Kaydet"
+        "notPaidFriends": "Ödeme yapmayan kişiler",
+        "updateNotPaidFriends": "Ödeme yapmayanları güncelle",
+        "save": "Kaydet"
       }
     }

@@ -147,7 +147,7 @@
         "membersPaid": "החברים ששילמו",
         "totalPaid": "סה\"כ שולם:",
         "pricePerPerson": "מחיר לאדם:",
-        "member1OwesMember2": "\u200E%{friend1} צריכ/ה להחזיר כסף ל\u200E%{friend2}: %{amount} %{currency}",
+        "member1OwesMember2": "\u200E%{friend1} - צריכ/ה להחזיר כסף ל \u200E%{friend2}: %{amount} %{currency}",
         "share": "שתף",
         "close": "סגור",
         "friend": "חבר",

@@ -99,7 +99,7 @@
       "totalPaid": "Totale pagato:",
       "pricePerPerson": "Prezzo per persona:",
       "member1OwesMember2": "%{friend1} deve soldi a %{friend2}: %{currency}%{amount}",
-      "owe": "deve soldi a"
+      "owe": "deve soldi a",
       "share": "Condividi",
       "close": "Chiudi",
       "friend": "Persona",

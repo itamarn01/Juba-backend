@@ -24,6 +24,7 @@
       "friend": "Person",
       "notPaidFriends": "People who didn't pay",
       "updateNotPaidFriends": "Update who didn't pay",
+      "searchCurrency": "Search currency",
       "save": "Save"
     },
     "es": {
@@ -51,6 +52,7 @@
       "friend": "Persona",
       "notPaidFriends": "Personas que no pagaron",
       "updateNotPaidFriends": "Actualizar quién no pagó",
+      "searchCurrency": "Buscar moneda",
       "save": "Guardar"
     },
     "fr": {
@@ -78,6 +80,7 @@
       "friend": "Personne",
       "notPaidFriends": "Personnes n'ayant pas payé",
       "updateNotPaidFriends": "Mettre à jour qui n'a pas payé",
+      "searchCurrency": "Rechercher une devise",
       "save": "Enregistrer"
     },
     "it": {
@@ -105,6 +108,7 @@
       "friend": "Persona",
       "notPaidFriends": "Persone che non hanno pagato",
       "updateNotPaidFriends": "Aggiorna chi non ha pagato",
+      "searchCurrency": "Cerca valuta",
       "save": "Salva"
     },
     "de": {
@@ -132,6 +136,7 @@
       "friend": "Person",
       "notPaidFriends": "Personen, die nicht bezahlt haben",
       "updateNotPaidFriends": "Aktualisieren, wer nicht bezahlt hat",
+      "searchCurrency": "Währung suchen",
       "save": "Speichern"
     },
     "he": {
@@ -159,6 +164,7 @@
         "friend": "חבר",
         "notPaidFriends": "החברים שלא שילמו",
         "updateNotPaidFriends": "עדכן מי לא שילם",
+        "searchCurrency": "חפש מטבע",
         "save": "אישור"
       },
       "ar": {
@@ -186,6 +192,7 @@
         "friend": "شخص",
         "notPaidFriends": "الأشخاص الذين لم يدفعوا",
         "updateNotPaidFriends": "تحديث من لم يدفع",
+        "searchCurrency": "البحث عن العملة",
         "save": "حفظ"
       },
       "zh": {
@@ -213,6 +220,7 @@
         "friend": "成员",
         "notPaidFriends": "未付款的人",
         "updateNotPaidFriends": "更新谁未付款",
+        "searchCurrency": "搜索货币",
         "save": "保存"
       },
       "ja": {
@@ -240,6 +248,7 @@
         "friend": "メンバー",
         "notPaidFriends": "支払っていない人",
         "updateNotPaidFriends": "支払っていない人を更新",
+        "searchCurrency": "通貨を検索",
         "save": "保存"
       },
       "ko": {
@@ -267,6 +276,7 @@
         "friend": "멤버",
         "notPaidFriends": "지불하지 않은 사람들",
         "updateNotPaidFriends": "지불하지 않은 사람 업데이트",
+        "searchCurrency": "통화 검색",
         "save": "저장"
       },
       "pt": {
@@ -294,6 +304,7 @@
         "friend": "Membro",
         "notPaidFriends": "Pessoas que não pagaram",
         "updateNotPaidFriends": "Atualizar quem não pagou",
+        "searchCurrency": "Pesquisar moeda",
         "save": "Salvar"
       },
       "ru": {
@@ -320,6 +331,7 @@
         "close": "Закрыть",
         "friend": "Участник","notPaidFriends": "Люди, которые не заплатили",
         "updateNotPaidFriends": "Обновить, кто не заплатил",
+        "searchCurrency": "Поиск валюты",
         "save": "Сохранить"
       },
       "hi": {
@@ -347,6 +359,7 @@
         "friend": "सदस्य",
         "notPaidFriends": "जिन लोगों ने भुगतान नहीं किया",
         "updateNotPaidFriends": "अपडेट करें किसने भुगतान नहीं किया",
+        "searchCurrency": "मुद्रा खोजें",
         "save": "सहेजें"
       },
       "tr": {
@@ -374,6 +387,7 @@
         "friend": "Üye",
         "notPaidFriends": "Ödeme yapmayan kişiler",
         "updateNotPaidFriends": "Ödeme yapmayanları güncelle",
+        "searchCurrency": "Para birimi ara",
         "save": "Kaydet"
       }
     }

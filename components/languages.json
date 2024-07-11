@@ -130,7 +130,7 @@
       "totalPaid": "Insgesamt ausgegeben:",
       "pricePerPerson": "Preis pro Person:",
       "member1OwesMember2": "%{friend1} schuldet %{friend2}: %{currency}%{amount}",
-      "owe": "schuldet Geld",
+      "owe": "schuldet",
       "share": "Teilen",
       "close": "Schließen",
       "friend": "Person",

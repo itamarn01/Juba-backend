@@ -29,3 +29,13 @@ npm run dev
 2. **Root Directory**: `admin` (Vercel detects Vite by itself).
 3. Environment Variables: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`.
 4. Deploy. Every push to `main` redeploys.
+
+## Public pages
+
+Static pages in `public/`, open to everyone (no login), English and Hebrew (`?lang=he`):
+
+- `/privacy` – Privacy Policy (Google Play Console and App Store Connect)
+- `/terms` – Terms of Use
+- `/support` – Support URL for App Store Connect; `/support#delete-data` explains data deletion
+
+Update the "Effective date" on a page whenever its content changes.

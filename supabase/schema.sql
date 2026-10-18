@@ -69,6 +69,12 @@ drop policy if exists "admins update devices" on public.devices;
 create policy "admins update devices" on public.devices
   for update to authenticated using (public.is_admin()) with check (public.is_admin());
 
+-- Data deletion requests. The device's tips stay for accounting, unlinked
+-- (tips.device_id is set to null by the foreign key).
+drop policy if exists "admins delete devices" on public.devices;
+create policy "admins delete devices" on public.devices
+  for delete to authenticated using (public.is_admin());
+
 drop policy if exists "admins read tips" on public.tips;
 create policy "admins read tips" on public.tips
   for select to authenticated using (public.is_admin());

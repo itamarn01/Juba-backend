@@ -169,10 +169,13 @@ const loadDevices = async () => {
               <td>
                 <input class="note" data-note="${device.id}" value="${escapeHtml(device.note ?? "")}" placeholder="..." />
               </td>
+              <td>
+                <button class="danger" data-delete="${device.id}" title="מחיקת המידע של המכשיר (בקשת מחיקה)">מחיקה</button>
+              </td>
             </tr>`;
         })
         .join("")
-    : `<tr><td colspan="9" class="empty">אין מכשירים</td></tr>`;
+    : `<tr><td colspan="10" class="empty">אין מכשירים</td></tr>`;
 
   $("page-label").textContent = `עמוד ${state.page + 1}`;
   $("prev").disabled = state.page === 0;
@@ -205,10 +208,33 @@ $("devices-body").addEventListener("change", async (event) => {
   }
 });
 
+// For data deletion requests. Users see the first 8 characters of their
+// device ID in the app's "What is JUBA" screen; search for them here.
+const deleteDevice = async (id) => {
+  const confirmed = confirm(
+    `למחוק את המכשיר ${id.slice(0, 8)}?\n\n` +
+      "המחיקה סופית. הטיפים של המכשיר יישארו לצורכי הנהלת חשבונות, בלי קישור למכשיר.\n" +
+      "אם האפליקציה עדיין מותקנת אצל המשתמש, היא תירשם מחדש בפתיחה הבאה."
+  );
+  if (!confirmed) return;
+  // RLS skips rows silently, so check that a row was actually deleted.
+  const { data, error } = await supabase.from("devices").delete().eq("id", id).select("id");
+  if (error || !data.length) {
+    showToast(error?.message ?? "המחיקה נכשלה. הרץ ב-Supabase את supabase/schema.sql המעודכן.", true);
+    return;
+  }
+  showToast("המכשיר נמחק");
+  refresh();
+};
+
 $("devices-body").addEventListener("click", async (event) => {
-  const id = event.target.dataset.copy;
-  if (!id) return;
-  await navigator.clipboard.writeText(id);
+  const { copy, delete: deleteId } = event.target.dataset;
+  if (deleteId) {
+    deleteDevice(deleteId);
+    return;
+  }
+  if (!copy) return;
+  await navigator.clipboard.writeText(copy);
   showToast("המזהה הועתק");
 });
 

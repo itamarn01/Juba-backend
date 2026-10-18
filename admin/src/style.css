@@ -250,6 +250,18 @@ button.link {
   text-decoration: underline dotted;
 }
 
+button.danger {
+  background: transparent;
+  color: var(--red);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+button.danger:hover {
+  border-color: var(--red);
+}
+
 .dot {
   display: inline-block;
   width: 8px;

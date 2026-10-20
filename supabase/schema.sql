@@ -20,6 +20,10 @@ create table if not exists public.devices (
   note text
 );
 
+-- Country the device last connected from (ISO code such as "IL"), taken from
+-- the IP address on the server. Added after launch, hence the alter.
+alter table public.devices add column if not exists country text;
+
 create index if not exists devices_last_seen_idx on public.devices (last_seen_at desc);
 
 -- Tips bought through Google Play Billing.
@@ -88,8 +92,10 @@ create policy "admins read self" on public.admins
   for select to authenticated using (user_id = auth.uid());
 
 -- Devices with their tip totals, for the admin panel. security_invoker makes
--- the view respect the RLS policies above.
-create or replace view public.device_overview
+-- the view respect the RLS policies above. Dropped first because d.* changes
+-- whenever devices gets a new column, which create or replace cannot handle.
+drop view if exists public.device_overview;
+create view public.device_overview
 with (security_invoker = true) as
 select
   d.*,
@@ -121,20 +127,32 @@ set search_path = public
 as $$
 declare
   v_ads_disabled boolean;
+  v_country text;
 begin
-  insert into public.devices (id, platform, app_version, language, region)
+  -- Supabase's API sits behind Cloudflare, which adds the caller's country
+  -- (by IP) as the cf-ipcountry header. XX means unknown, T1 means Tor.
+  v_country := upper(left(
+    current_setting('request.headers', true)::json ->> 'cf-ipcountry', 2
+  ));
+  if v_country !~ '^[A-Z]{2}$' or v_country in ('XX', 'T1') then
+    v_country := null;
+  end if;
+
+  insert into public.devices (id, platform, app_version, language, region, country)
   values (
     p_device_id,
     left(p_platform, 20),
     left(p_app_version, 20),
     left(p_language, 10),
-    left(p_region, 10)
+    left(p_region, 10),
+    v_country
   )
   on conflict (id) do update set
     platform = coalesce(excluded.platform, devices.platform),
     app_version = coalesce(excluded.app_version, devices.app_version),
     language = coalesce(excluded.language, devices.language),
     region = coalesce(excluded.region, devices.region),
+    country = coalesce(excluded.country, devices.country),
     last_seen_at = now(),
     launches = devices.launches + case when p_launch then 1 else 0 end
   returning ads_disabled into v_ads_disabled;

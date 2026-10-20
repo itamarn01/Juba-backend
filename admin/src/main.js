@@ -29,6 +29,26 @@ const timeAgo = (iso) => {
   return `לפני ${days} ימים`;
 };
 
+const countryNames = new Intl.DisplayNames(["he"], { type: "region" });
+
+// Country by IP; devices seen before it was recorded fall back to the
+// region in the phone's settings, marked with a "?".
+const formatCountry = (device) => {
+  const code = device.country ?? device.region;
+  if (!code) return "-";
+  let name = code;
+  try {
+    name = countryNames.of(code.toUpperCase());
+  } catch {
+    // Not a valid region code; show it as is.
+  }
+  const flag = /^[A-Z]{2}$/i.test(code)
+    ? String.fromCodePoint(...[...code.toUpperCase()].map((c) => 0x1f1a5 + c.charCodeAt(0)))
+    : "";
+  const fromSettings = !device.country;
+  return `<span title="${escapeHtml(fromSettings ? `${code} (לפי הגדרות המכשיר)` : code)}">${flag} ${escapeHtml(name)}${fromSettings ? " ?" : ""}</span>`;
+};
+
 const formatDate = (iso) =>
   iso
     ? new Date(iso).toLocaleString("he-IL", { dateStyle: "short", timeStyle: "short" })
@@ -158,6 +178,7 @@ const loadDevices = async () => {
               <td>${formatDate(device.created_at)}</td>
               <td>${device.launches}</td>
               <td>${escapeHtml(device.app_version ?? "-")}</td>
+              <td>${formatCountry(device)}</td>
               <td>${escapeHtml([device.language, device.region].filter(Boolean).join("-") || "-")}</td>
               <td>${device.tips_count ? `☕ ${device.tips_count}` : "-"}</td>
               <td>
@@ -175,7 +196,7 @@ const loadDevices = async () => {
             </tr>`;
         })
         .join("")
-    : `<tr><td colspan="10" class="empty">אין מכשירים</td></tr>`;
+    : `<tr><td colspan="11" class="empty">אין מכשירים</td></tr>`;
 
   $("page-label").textContent = `עמוד ${state.page + 1}`;
   $("prev").disabled = state.page === 0;

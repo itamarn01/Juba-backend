@@ -39,3 +39,9 @@ Static pages in `public/`, open to everyone (no login), English and Hebrew (`?la
 - `/support` – Support URL for App Store Connect; `/support#delete-data` explains data deletion
 
 Update the "Effective date" on a page whenever its content changes.
+
+## app-ads.txt (AdMob)
+
+`public/app-ads.txt` is served at `/app-ads.txt`. AdMob only finds it if this site's domain
+is the **Website** in the app's Google Play store listing (Play Console → Grow users →
+Store presence → Store settings → Store listing contact details).
